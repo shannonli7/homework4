@@ -158,9 +158,13 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  position: relative;
-  top: 50%;
-  left: 50%;
+  /* position: relative; */
+  /* top: 50%;
+  left: 50%; */
+  left: auto;
+  margin-left: auto;
+  right: auto;
+  margin-right: auto;
 }
 
 
