@@ -170,6 +170,7 @@ header p{
   /* need to work on */
   position: relative;
   top: 50%;
+  bottom: 50%;
   text-align: center;
   overflow: auto;
 }
