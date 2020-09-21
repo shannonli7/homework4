@@ -57,6 +57,7 @@ nav a:focus{
   z-index: 1;
   /*Your code here*/
   text-decoration: none;
+  top: 40px;
 }
 
 /*Your Code Here*/
@@ -170,6 +171,8 @@ header p{
   /* need to work on */
   text-align: center;
   /* position: absolute; */
+  /* margin-left: auto;
+  margin-right: auto; */
   overflow: auto;
 }
 
@@ -180,14 +183,15 @@ header p{
     /*Your code here:*/
     /* need to check */
     text-decoration: none;
+    text-align: right;
   }
 
   .container{
     /*Your code here:*/
     /* completed */
     display: grid;
-    grid-template-columns: 50px, auto, 500px, auto, 50px;
-    grid-template-rows: 400px, 400px, 400px, 400px, 400px;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
   .about, .clients, .method-image, .contact-image{
