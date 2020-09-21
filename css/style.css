@@ -158,8 +158,9 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
+  top: auto;
   overflow: auto;
 }
 
