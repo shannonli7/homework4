@@ -158,12 +158,13 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  position: relative;
-  top: 0;
+  /* position: absolute;
+  top: 50%;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   margin: auto;
+  overflow: auto;
 }
 
 
