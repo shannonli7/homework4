@@ -157,7 +157,8 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  vertical-align: middle;
+  top: 50%;
+  bottom: 50%;
 }
 
 
