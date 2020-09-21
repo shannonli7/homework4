@@ -42,6 +42,7 @@ nav a:hover{
 
 nav a:focus{
   text-decoration: underline;
+  border: 2px solid;
 }
 
 .skip a{
@@ -52,11 +53,12 @@ nav a:focus{
   transition: top 1s ease-out;
   z-index: 1;
   /*Your code here*/
+  text-decoration: none;
 }
 
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
-.skip{
+.skip a{
   position: relative;
   top: 40px;
   visibility: hidden;
@@ -84,10 +86,9 @@ footer{
 }
 
 
-
-
 .container{
   /*Your Code Here*/
+  display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: auto auto auto auto;
   grid-row-gap: 15px;
@@ -103,10 +104,7 @@ header{
 
   /*Your Code Here*/
   /*Set background-image to header.jpg */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../images/header.jpg");
 
   grid-column: 1 / -1;  /*Can you explain what this does?*/
   grid-row: 1 / auto;   /*Can you rewrite it?*/
@@ -121,12 +119,14 @@ header p{
 
 .about, .method, .clients, .contact{
   /*Your Code Here*/
+  display: grid;
   grid-column-start: 2;
   grid-column-end: span 1;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
   /*Your Code Here*/
+  display: grid;
   column-span: all;
   max-height: 700px;
   overflow: hidden;
@@ -134,12 +134,14 @@ header p{
 
 .about, .about-image{
    /*Your Code Here*/
+   display: grid;
    grid-row-start: 2;
    grid-row-end: span 1;
 }
 
 .method, .method-image{
    /*Your Code Here*/
+   display: grid;
    grid-row-start: 3;
    grid-row-end: span 1;
 }
@@ -147,6 +149,7 @@ header p{
 
 .clients, .clients-image{
     /*Your Code Here*/
+    display: grid;
     grid-row-start: 4;
     grid-row-end: span 1;
 }
@@ -154,6 +157,7 @@ header p{
 
 .contact, .contact-image{
     /*Your Code Here*/
+    display: grid;
     grid-row-start: 5;
     grid-row-end: span 1;
 }
@@ -172,22 +176,26 @@ background-color: rgba(255, 255, 255, .8);
   nav{
     padding: 30px 0px;
     /*Your code here:*/
+    top: 40px;
   }
 
   .container{
     /*Your code here:*/
+    display: grid;
     grid-template-columns: 50px, auto, 500px, auto, 50px;
     grid-template-rows: 400px, 400px, 400px, 400px, 400px;
   }
 
   .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
+    display: grid;
     grid-column-start: 3;
     grid-column-end: span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
     /*Your code here:*/
+    display: grid;
     grid-column-start: 2;
     grid-column-end: span 2;
   }
