@@ -158,8 +158,7 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  /* position: relative;*/
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
