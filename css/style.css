@@ -60,6 +60,10 @@ nav a:focus{
   top: 40px;
 }
 
+.skip a:focus{
+  top: 40px;
+  visibility: visible;
+}
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
 .skip > a:first-child{
