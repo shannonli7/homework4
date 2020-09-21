@@ -42,6 +42,9 @@ nav a:hover{
 
 nav a:focus{
   text-decoration: underline;
+}
+
+*:focus{
   border: 2px solid;
 }
 
@@ -58,16 +61,16 @@ nav a:focus{
 
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
-.skip a{
-  position: relative;
+.skip > a:first-child{
+  position: absolute;
   top: 40px;
   visibility: hidden;
 }
 
 /*Your Code Here*/
 /*Write selector/rule property to style all elements when in focus*/
-.skip a:focus{
-  position: relative;
+.skip > a:first-child:focus{
+  position: absolute;
   top: 40px;
   visibility: visible;
 }
@@ -120,12 +123,14 @@ header p{
 
 .about, .method, .clients, .contact{
   /*Your Code Here*/
+  /* completed */
   display: grid;
   grid-column: 2 / span 1;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
   /*Your Code Here*/
+  /* completed */
   grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
@@ -133,23 +138,27 @@ header p{
 
 .about, .about-image{
    /*Your Code Here*/
+   /* completed */
    grid-row: 2 / span 1;
 }
 
 .method, .method-image{
    /*Your Code Here*/
+   /* completed */
    grid-row: 3 / span 1;
 }
 
 
 .clients, .clients-image{
     /*Your Code Here*/
+    /* completed */
     grid-row: 4 / span 1;
 }
 
 
 .contact, .contact-image{
     /*Your Code Here*/
+    /* completed */
     grid-row: 5 / span 1;
 }
 
@@ -158,9 +167,8 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  /* align-items: center;
-  justify-content: center; */
-  top: auto;
+  /* need to work on */
+  text-align: center;
   overflow: auto;
 }
 
@@ -169,11 +177,13 @@ header p{
   nav{
     padding: 30px 0px;
     /*Your code here:*/
-    top: 40px;
+    /* need to check */
+    text-decoration: none;
   }
 
   .container{
     /*Your code here:*/
+    /* completed */
     display: grid;
     grid-template-columns: 50px, auto, 500px, auto, 50px;
     grid-template-rows: 400px, 400px, 400px, 400px, 400px;
@@ -181,13 +191,13 @@ header p{
 
   .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
-    display: grid;
+    /* completed */
     grid-column: 3 / span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
     /*Your code here:*/
-    display: grid;
+    /* completed */
     grid-column: 2 / span 2;
   }
 }
