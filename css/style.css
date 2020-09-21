@@ -158,8 +158,9 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  position: relative;
-  top: 50%;
+  display: block;
+  margin: auto;
+  width: 50%;
   overflow: auto;
 }
 
