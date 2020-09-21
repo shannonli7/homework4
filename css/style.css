@@ -159,9 +159,7 @@ header p{
   padding: 30px;
   /*Your code here:*/
   position: relative;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
   overflow: auto;
 }
 
@@ -183,15 +181,13 @@ header p{
   .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
     display: grid;
-    grid-column-start: 3;
-    grid-column-end: span 2;
+    grid-column: 3 / span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
     /*Your code here:*/
     display: grid;
-    grid-column-start: 2;
-    grid-column-end: span 2;
+    grid-column: 2 / span 2;
   }
 }
 
