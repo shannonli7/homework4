@@ -157,6 +157,7 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
+  position: absolute;
   top: 50%;
   bottom: 50%;
 }
